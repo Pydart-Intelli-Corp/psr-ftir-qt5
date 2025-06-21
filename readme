@@ -1,0 +1,5 @@
+pyinstaller --onefile main.py
+
+pyinstaller --onefile --add-data "resources_rc.py:." main.py
+
+pyrcc5 resources.qrc -o resources_rc.py
